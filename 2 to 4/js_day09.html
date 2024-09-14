@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+        *{box-sizing: border-box;}
+        .box{
+            width:350px; padding: 16px; height:auto; background-color: bisque; cursor: pointer;
+        }
+
+        .select{
+            border:2px solid blue;
+        }
+
+
+        .grid{
+            width: 600px;
+        }
+
+        .thumb{
+            width: 100px; height:100px; background-color: lightcoral; float: left; margin: 32px;
+        }
+
+        .banner{width:600px; height: 400px; background-color: beige; clear: both; overflow: hidden;}
+
+        .imgGrid{clear: both;}
+        .imgGrid img{width:100px}
+    </style>
+</head>
+<body>
+    <h1>Events in Javascript</h1>
+
+
+    <div class="box">
+        <h3>Heading-1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione blanditiis nam voluptates nulla culpa vel quam ullam incidunt illo, tenetur voluptatem facere excepturi laboriosam dolore fuga veniam ab architecto velit!</p>
+        <a href="#">Read more</a>
+    </div>
+
+
+    <img src="images/Medical/circle.png"  alt="">
+
+
+
+    <div class="grid">
+        <div class="thumb" id="0"></div>
+        <div class="thumb" id="1"></div>
+        <div class="thumb" id="2"></div>
+        <div class="thumb" id="3"></div>
+        <div class="thumb" id="4"></div>
+        <div class="thumb" id="5"></div>
+        <div class="thumb" id="6"></div>
+        <div class="thumb" id="7"></div>
+    </div>
+
+
+    <div class="banner">
+        <img src="" alt="" id="hero">
+    </div>    
+
+    <div class="imgGrid">
+        <img src="images/website/slide_1.png" alt="">
+        <img src="images/website/slide_2.png" alt="">
+        <img src="images/website/slide_3.png" alt="">
+        <img src="images/website/slide_4.png" alt="">
+    </div>
+
+
+
+    <script src="js/day09.js"></script>
+</body>
+</html>
