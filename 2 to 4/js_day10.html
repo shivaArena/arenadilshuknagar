@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{height:100%;}
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+        
+        .chatBox{position: fixed; background-color: aliceblue; height:350px; width:400px; right: 0; bottom:10px; transition: all 1s;} 
+
+        .active{bottom: -315px;}
+
+        .chatHeading{background-color: brown; padding: 8px; color: white;}
+
+        .chatBody{
+            min-height: 275px;
+            overflow: scroll;
+        }
+
+        .chatBody p{padding: 16px; background-color: aquamarine; text-align: right; width: 80%; margin-left: auto; margin-bottom: 16px; border-radius: 16px 16px 0 16px;}
+        .chatFooter{
+            background-color: aqua; padding: 12px;
+        }
+
+        .chatFooter input{padding: 8px; width: 80%;}
+        .chatFooter button
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="chatBox active" id="chat">
+        <div class="chatHeading">
+            <h3>Chat with us !</h3>
+        </div>
+
+        <div class="chatBody">
+            
+        </div>
+
+        <div class="chatFooter">
+            <input type="text" id="chatInput">
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+
+    <div class="box">
+       User: <input type="text" id="user">    
+       <div class="userInfo"></div>
+
+       Password: 
+       <input type="text" id="password">
+    </div>
+
+    <script src="js/day10.js"></script>
+</body>
+</html>
