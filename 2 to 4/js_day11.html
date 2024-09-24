@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width:350px; height: 150px; padding: 16px; background-color: blue; color: white; position: fixed; left: 0; top: 0;}
+        .active{background-color: blueviolet;}
+
+        .slide{position: fixed; opacity: 0; transition: all 0.5s;}
+        .slide.view{opacity: 1;}
+
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente aperiam neque harum mollitia voluptatum qui, doloribus repudiandae. Iste, quos. Dolores voluptas odio quisquam sapiente eos sed libero similique sunt tempora.</p>
+    </div> -->
+
+
+    <div class="hero">
+        <img src="images/website/slide_1.png" class="slide view" alt="">
+        <img src="images/website/slide_2.png" class="slide " alt="">
+        <img src="images/website/slide_3.png" class="slide " alt="">
+        <img src="images/website/slide_4.png" class="slide " alt="">
+    </div>
+
+    <div>
+        <select name="" id="bodyColor">
+            <option value="">-Select Color-</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+
+        <input type="color" name="" id="inputColor">
+
+        <textarea name="" id="message"></textarea>
+        <div id="messageInfo"></div>
+    </div>
+
+
+    <script src="js/day11.js"></script>
+</body>
+</html>
